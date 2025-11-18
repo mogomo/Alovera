@@ -233,7 +233,7 @@ To verify that the installer has not been corrupted or tampered with, you can co
 
 **Vera-Setup-1.2.39.exe**
 
-- SHA‑256: `7355157200e7b8bb3c3c95d0df812ac9a2b5a860782415e53c91145218027f77`
+- SHA‑256: `6fd79bc72f1e72ebf6fff579c2fd8149cba4549c87b1cc03e05118592c91b6aa`
 
 ### How to verify on Windows (PowerShell)
 
