@@ -1,7 +1,7 @@
 # Vera – Vertica SQL Client for Windows
 
 **Installer-only repository for Vera**  
-Current Windows installer: `Vera-Setup-1.2.39.exe`
+Current Windows installer: `Vera-Setup-1.2.40.exe`
 
 > This repository distributes the Windows installer and documentation for **Vera**.  
 
@@ -97,12 +97,12 @@ If you just want to use Vera, download the installer from this repository and fo
 
 The current Windows installer is:
 
-- `Vera-Setup-1.2.39.exe`
+- `Vera-Setup-1.2.40.exe`
 
 To download from GitHub:
 
 1. Go to the **Code** tab of this repository.
-2. Locate `Vera-Setup-1.2.39.exe` in the file list.
+2. Locate `Vera-Setup-1.2.40.exe` in the file list.
 3. Click the filename.
 4. Click **Download** (or **View raw**) to save it to your machine.
 
@@ -114,7 +114,7 @@ In the future, installers may also be published under **Releases**.
 
 1. **Download the installer**
 
-   - Save `Vera-Setup-1.2.39.exe` to a folder on your Windows machine (e.g. `Downloads`).
+   - Save `Vera-Setup-1.2.40.exe` to a folder on your Windows machine (e.g. `Downloads`).
 
 2. **(Optional) Verify the download**
 
@@ -122,7 +122,7 @@ In the future, installers may also be published under **Releases**.
 
 3. **Run the installer**
 
-   - Double‑click `Vera-Setup-1.2.39.exe`.
+   - Double‑click `Vera-Setup-1.2.40.exe`.
    - If Windows SmartScreen shows a warning:
      - Verify that the installer came from this official GitHub repository.
      - Click **More info → Run anyway** if you trust the publisher.
@@ -208,8 +208,8 @@ On the first run, Vera expects to find `vsql.exe` (Vertica client) and basic con
 
 ## Updates
 
-- **Current version:** `1.2.39`
-- **Installer filename:** `Vera-Setup-1.2.39.exe`
+- **Current version:** `1.2.40`
+- **Installer filename:** `Vera-Setup-1.2.40.exe`
 
 When a new version is released:
 
@@ -233,7 +233,7 @@ To verify that the installer has not been corrupted or tampered with, you can co
 
 **Vera-Setup-1.2.39.exe**
 
-- SHA‑256: `6fd79bc72f1e72ebf6fff579c2fd8149cba4549c87b1cc03e05118592c91b6aa`
+- SHA‑256: `8d0a1a5b24080f98fc4e9c759dc6c21501cffbf9f29c8b729fc3ba9b4abd5a73`
 
 ### How to verify on Windows (PowerShell)
 
@@ -242,7 +242,7 @@ To verify that the installer has not been corrupted or tampered with, you can co
 3. Run:
 
    ```powershell
-   Get-FileHash .\Vera-Setup-1.2.39.exe -Algorithm SHA256
+   Get-FileHash .\Vera-Setup-1.2.40.exe -Algorithm SHA256
    ```
 
 4. Confirm that the `Hash` value matches the SHA‑256 value listed above.
@@ -265,7 +265,7 @@ If you have additional internal security or privacy policies, please review and 
 This is a **binary distribution repository**.
 
 - ✅ Contains:
-  - `Vera-Setup-1.2.39.exe` (Windows installer)
+  - `Vera-Setup-1.2.40.exe` (Windows installer)
   - This `README.md` and any related documentation.
 
 Vera is currently distributed as a **closed‑source** application.
@@ -294,7 +294,7 @@ Vera is currently distributed as a **closed‑source** application.
 
 **Installer does not start**
 
-- Right‑click `Vera-Setup-1.2.39.exe` and choose **Run as administrator**.
+- Right‑click `Vera-Setup-1.2.40.exe` and choose **Run as administrator**.
 - Check whether your antivirus has quarantined the file and restore it if appropriate.
 
 **SmartScreen or security warning**
