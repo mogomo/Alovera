@@ -3,8 +3,6 @@
 **Installer-only repository for Vera**  
 Current Windows installer: `Vera-Setup-1.2.40.exe`
 
-> This repository distributes the Windows installer and documentation for **Vera**.  
-
 ---
 
 ## Overview
@@ -228,8 +226,6 @@ To update Vera:
 ## Checksums & Verification
 
 To verify that the installer has not been corrupted or tampered with, you can compare its SHA‑256 checksum with the value below.
-
-> Replace the example below with the actual hash you compute for your build.
 
 **Vera-Setup-1.2.39.exe**
 
