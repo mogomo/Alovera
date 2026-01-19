@@ -1,7 +1,7 @@
 # Vera – Vertica SQL Client for Windows
 
 **Installer-only repository for Vera**  
-Current Windows installer: `Vera-Setup-1.2.43.exe`
+Current Windows installer: `Vera-Setup-1.2.44.exe`
 
 ---
 
@@ -95,12 +95,12 @@ If you just want to use Vera, download the installer from this repository and fo
 
 The current Windows installer is:
 
-- `Vera-Setup-1.2.43.exe`
+- `Vera-Setup-1.2.44.exe`
 
 To download from GitHub:
 
 1. Go to the **Code** tab of this repository.
-2. Locate `Vera-Setup-1.2.43.exe` in the file list.
+2. Locate `Vera-Setup-1.2.44.exe` in the file list.
 3. Click the filename.
 4. Click **Download** (or **View raw**) to save it to your machine.
 
@@ -112,7 +112,7 @@ In the future, installers may also be published under **Releases**.
 
 1. **Download the installer**
 
-   - Save `Vera-Setup-1.2.43.exe` to a folder on your Windows machine (e.g. `Downloads`).
+   - Save `Vera-Setup-1.2.44.exe` to a folder on your Windows machine (e.g. `Downloads`).
 
 2. **(Optional) Verify the download**
 
@@ -120,7 +120,7 @@ In the future, installers may also be published under **Releases**.
 
 3. **Run the installer**
 
-   - Double‑click `Vera-Setup-1.2.43.exe`.
+   - Double‑click `Vera-Setup-1.2.44.exe`.
    - If Windows SmartScreen shows a warning:
      - Verify that the installer came from this official GitHub repository.
      - Click **More info → Run anyway** if you trust the publisher.
@@ -202,12 +202,19 @@ On the first run, Vera expects to find `vsql.exe` (Vertica client) and basic con
    - Review the suggested SQL; choose to append, replace or run it.
    - All AI‑generated SQL requires explicit approval before execution.
 
+7. **DB to DB Copy (Demo Menu)**
+   - **DB to DB Copy** window for interactive database-to-database transfers.
+   - The feature opens a dedicated React view with side-by-side **Source** and **Target** panels, each with persisted connection settings and a reusable schema tree (non-system objects).
+   - Users can choose **Schema only**, **Data only**, or **Schema and Data**, then drag schemas or tables between databases.
+   - Each drop triggers a confirmation dialog before execution.
+   - Data transfer is executed via **Vertica DBLINK** (CONNECT / EXPORT or COPY / DISCONNECT) with support for configurable concurrency, per-task progress, logs, and error reporting.
+   
 ---
 
 ## Updates
 
-- **Current version:** `1.2.43`
-- **Installer filename:** `Vera-Setup-1.2.43.exe`
+- **Current version:** `1.2.44`
+- **Installer filename:** `Vera-Setup-1.2.44.exe`
 
 When a new version is released:
 
@@ -227,9 +234,9 @@ To update Vera:
 
 To verify that the installer has not been corrupted or tampered with, you can compare its SHA‑256 checksum with the value below.
 
-**Vera-Setup-1.2.43.exe**
+**Vera-Setup-1.2.44.exe**
 
-- SHA‑256: `f367c28a49413c3731e07e13ecf1bdf3b5cf678f3a6f9de9a30e6ead7a923455`
+- SHA‑256: `fd46b01f1fcbab175bc08e8facb4c02b4495673d9ce8d8b0868e2a5f6f6e951f`
 
 ### How to verify on Windows (PowerShell)
 
@@ -238,7 +245,7 @@ To verify that the installer has not been corrupted or tampered with, you can co
 3. Run:
 
    ```powershell
-   Get-FileHash .\Vera-Setup-1.2.43.exe -Algorithm SHA256
+   Get-FileHash .\Vera-Setup-1.2.44.exe -Algorithm SHA256
    ```
 
 4. Confirm that the `Hash` value matches the SHA‑256 value listed above.
@@ -261,7 +268,7 @@ If you have additional internal security or privacy policies, please review and 
 This is a **binary distribution repository**.
 
 - ✅ Contains:
-  - `Vera-Setup-1.2.43.exe` (Windows installer)
+  - `Vera-Setup-1.2.44.exe` (Windows installer)
   - This `README.md` and any related documentation.
 
 Vera is currently distributed as a **closed‑source** application.
@@ -282,7 +289,7 @@ Vera is currently distributed as a **closed‑source** application.
 
 - **SmartScreen / antivirus warnings**
   - New or rarely‑seen executables can trigger warnings from Windows or antivirus tools.
-  - If you downloaded `Vera-Setup-1.2.41.exe` from this repository and trust the publisher, it should be safe to allow.
+  - If you downloaded `Vera-Setup-1.2.44.exe` from this repository and trust the publisher, it should be safe to allow.
 
 ---
 
@@ -290,7 +297,7 @@ Vera is currently distributed as a **closed‑source** application.
 
 **Installer does not start**
 
-- Right‑click `Vera-Setup-1.2.43.exe` and choose **Run as administrator**.
+- Right‑click `Vera-Setup-1.2.44.exe` and choose **Run as administrator**.
 - Check whether your antivirus has quarantined the file and restore it if appropriate.
 
 **SmartScreen or security warning**
@@ -316,12 +323,14 @@ Vera is currently distributed as a **closed‑source** application.
 ## Changelog
 
 ### 1.2.43
-
 - Refresh Schema tree bug fix.
 - Updated to the latest Vera desktop build.
 - Improved schema browsing and workspace handling.
 - Refined data visualization behavior for column distributions.
 - General stability and performance improvements.
+
+### 1.2.44
+- **DB to DB Copy** window (In Demo menu) for interactive database-to-database transfers.
 
 > Earlier versions and more detailed internal notes may be tracked elsewhere; this section focuses on public installer releases.
 
@@ -346,8 +355,6 @@ Vera is built using AI, several open‑source tools and libraries, including (bu
 - Monaco Editor for the SQL editing experience.
 - Additional graph and visualization libraries for network and geospatial views.
 - Various supporting NPM packages.
-
-Special thanks to everyone who has tested and provided feedback on Vera.
 
 ---
 
