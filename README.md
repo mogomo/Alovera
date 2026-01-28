@@ -1,7 +1,7 @@
 # Vera – Vertica SQL Client for Windows
 
 **Installer-only repository for Vera**  
-Current Windows installer: `Vera-Setup-1.2.45.exe`
+Current Windows installer: `Vera-Setup-1.2.46.exe`
 
 ---
 
@@ -100,39 +100,30 @@ The current Windows installer is:
 To download from GitHub:
 
 1. Go to the **Code** tab of this repository.
-2. Locate `Vera-Setup-1.2.45.exe` in the file list.
+2. Locate `Vera-Setup-x.y.z.exe` published under **Releases**.
 3. Click the filename.
-4. Click **Download** (or **View raw**) to save it to your machine.
-
-In the future, installers may also be published under **Releases**.
+4. Click **Download** to save it to your machine.
 
 ---
 
 ## Installation
 
 1. **Download the installer**
-
-   - Save `Vera-Setup-1.2.45.exe` to a folder on your Windows machine (e.g. `Downloads`).
-
+   - Save `Vera-Setup-x.y.z.exe` to a folder on your Windows machine (e.g. `Downloads`).
 2. **(Optional) Verify the download**
-
    - See [Checksums & Verification](#checksums--verification) if you want to validate integrity.
-
 3. **Run the installer**
-
-   - Double‑click `Vera-Setup-1.2.45.exe`.
+   - Double‑click `Vera-Setup-x.y.z.exe`.
    - If Windows SmartScreen shows a warning:
      - Verify that the installer came from this official GitHub repository.
      - Click **More info → Run anyway** if you trust the publisher.
 
 4. **Setup wizard**
-
    - Choose the installation folder (or accept the default).
    - Choose whether to create shortcuts.
    - Click **Install** and wait for the installation to complete.
 
 5. **Launch Vera**
-
    - Use the Desktop shortcut,
    - Or the Start Menu shortcut,
    - Or run `Vera` from the installation folder.
@@ -213,9 +204,6 @@ On the first run, Vera expects to find `vsql.exe` (Vertica client) and basic con
 
 ## Updates
 
-- **Current version:** `1.2.45`
-- **Installer filename:** `Vera-Setup-1.2.45.exe`
-
 When a new version is released:
 
 - The version number in this README and the installer filename will be updated.
@@ -234,9 +222,9 @@ To update Vera:
 
 To verify that the installer has not been corrupted or tampered with, you can compare its SHA‑256 checksum with the value below.
 
-**Vera-Setup-1.2.45.exe**
+**Vera-Setup-1.2.46.exe**
 
-- SHA‑256: `e37945c17af70ba75b478a0575189d23f6f275abf059938974ff988e07d824ac`
+- SHA‑256: `f47638fcdde26ce33f08e4fc5c557d2959e627b74a26fddbb1686980f731c25a`
 
 ### How to verify on Windows (PowerShell)
 
@@ -245,7 +233,7 @@ To verify that the installer has not been corrupted or tampered with, you can co
 3. Run:
 
    ```powershell
-   Get-FileHash .\Vera-Setup-1.2.45.exe -Algorithm SHA256
+   Get-FileHash .\Vera-Setup-1.2.46.exe -Algorithm SHA256
    ```
 
 4. Confirm that the `Hash` value matches the SHA‑256 value listed above.
@@ -268,7 +256,7 @@ If you have additional internal security or privacy policies, please review and 
 This is a **binary distribution repository**.
 
 - ✅ Contains:
-  - `Vera-Setup-1.2.45.exe` (Windows installer)
+  - `Vera-Setup-x.y.z.exe` (Windows installer)
   - This `README.md` and any related documentation.
 
 Vera is currently distributed as a **closed‑source** application.
@@ -289,7 +277,7 @@ Vera is currently distributed as a **closed‑source** application.
 
 - **SmartScreen / antivirus warnings**
   - New or rarely‑seen executables can trigger warnings from Windows or antivirus tools.
-  - If you downloaded `Vera-Setup-1.2.45.exe` from this repository and trust the publisher, it should be safe to allow.
+  - If you downloaded the Vera exe file from this repository and trust the publisher, it should be safe to allow.
 
 ---
 
@@ -297,7 +285,7 @@ Vera is currently distributed as a **closed‑source** application.
 
 **Installer does not start**
 
-- Right‑click `Vera-Setup-1.2.45.exe` and choose **Run as administrator**.
+- Right‑click `Vera-Setup-1.2.46.exe` and choose **Run as administrator**.
 - Check whether your antivirus has quarantined the file and restore it if appropriate.
 
 **SmartScreen or security warning**
@@ -332,7 +320,7 @@ Vera is currently distributed as a **closed‑source** application.
 ### 1.2.44
 - **DB to DB Copy** window (In Demo menu) for interactive database-to-database transfers.
 
-> Earlier versions and more detailed internal notes may be tracked elsewhere; this section focuses on public installer releases.
+> This section focuses on public installer releases.
 
 ---
 
