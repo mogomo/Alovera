@@ -1,7 +1,7 @@
 # Vera – Vertica SQL Client for Windows
 
 **Installer-only repository for Vera**  
-Current Windows installer: `Vera-Setup-1.2.47.exe`
+Current Windows installer: `Vera-Setup-1.2.48.exe`
 
 ---
 
@@ -95,7 +95,7 @@ If you just want to use Vera, download the installer from this repository and fo
 
 The current Windows installer is:
 
-- `Vera-Setup-1.2.45.exe`
+- `Vera-Setup-1.2.48.exe`
 
 To download from GitHub:
 
@@ -222,9 +222,9 @@ To update Vera:
 
 To verify that the installer has not been corrupted or tampered with, you can compare its SHA‑256 checksum with the value below.
 
-**Vera-Setup-1.2.46.exe**
+**Vera-Setup-1.2.48.exe**
 
-- SHA‑256: `27eef724041778ed4d9fec7dbb65a44f2c93e40445e5feda640b9ce22b554f04`
+- SHA‑256: `dbb102ab68ad5d83f2fa0a49ac65cc74ce3f8775d72268d48fea905c2e0f8036`
 
 ### How to verify on Windows (PowerShell)
 
@@ -233,7 +233,7 @@ To verify that the installer has not been corrupted or tampered with, you can co
 3. Run:
 
    ```powershell
-   Get-FileHash .\Vera-Setup-1.2.47.exe -Algorithm SHA256
+   Get-FileHash .\Vera-Setup-1.2.48.exe -Algorithm SHA256
    ```
 
 4. Confirm that the `Hash` value matches the SHA‑256 value listed above.
@@ -285,7 +285,7 @@ Vera is currently distributed as a **closed‑source** application.
 
 **Installer does not start**
 
-- Right‑click `Vera-Setup-1.2.47.exe` and choose **Run as administrator**.
+- Right‑click `Vera-Setup-1.2.48.exe` and choose **Run as administrator**.
 - Check whether your antivirus has quarantined the file and restore it if appropriate.
 
 **SmartScreen or security warning**
@@ -308,29 +308,13 @@ Vera is currently distributed as a **closed‑source** application.
 
 ---
 
-## Changelog
-
-### 1.2.43
-- Refresh Schema tree bug fix.
-- Updated to the latest Vera desktop build.
-- Improved schema browsing and workspace handling.
-- Refined data visualization behavior for column distributions.
-- General stability and performance improvements.
-
-### 1.2.44
-- **DB to DB Copy** window (In Demo menu) for interactive database-to-database transfers.
-
-> This section focuses on public installer releases.
-
----
-
 ## License & Disclaimer
 
 - **Application license:** Proprietary – all rights reserved.
 - **Development:** Vera was developed by **Maya Goldberg**, with the assistance of **AI tools** during design and implementation.
 - **Warranty disclaimer:** Vera and its installer are provided **“as is”**, **without warranties of any kind**, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non‑infringement. You assume all responsibility and risk for your use of the software.
-- **Brands and trademarks:** All names, brands, logos and products mentioned in this document, including **“Vertica”** and the **Vertica client `vsql.exe`**, are the property of their respective owners. Vertica and the Vertica logo are trademarks or registered trademarks of **OpenText** and/or its affiliates.
-- **Vertica licensing:** Vera is a separate, third‑party SQL client and does **not** include a Vertica license. To use Vertica in production, you must obtain a valid Vertica license. For licensing information, you can contact **Sivan Tziring** (Vertica / OpenText) via **LinkedIn**.
+- **Brands and trademarks:** All names, brands, logos and products mentioned in this document, including **“Vertica”** and the **Vertica client `vsql.exe`**, are the property of their respective owners.
+- **Vertica licensing:** Vera is a separate, third‑party SQL client and does **not** include a Vertica license. To use Vertica in production, you must obtain a valid Vertica license. For licensing information, you can contact **Sivan Tziring** via **LinkedIn**.
 
 ---
 
